@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Result
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>QR Code Login Result</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>From this page, you will connect to your localhost rest api and authentication, login...</p>
+		<p *ngIf="sessionId" style="font-weight: bold;">Session Id was gotten from qr code successfully.</p>
+		<p *ngIf="!sessionId" style="font-weight: bold;">There is an error about session id.</p>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

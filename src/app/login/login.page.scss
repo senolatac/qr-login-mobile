@@ -1,0 +1,103 @@
+.marginTop{
+      margin-top:150px;
+  }
+  .logo{
+  display: block;
+  margin: auto;
+  max-height: 100px;
+  margin-top: 50px;
+  }
+.input-label-custom{
+  font-weight: bold;
+  width: 90%;
+  padding-left:5%;
+  display: block;
+  margin-bottom: 0;
+}
+.label-ios + ion-input .text-input{
+  margin-left: 0px;
+}
+.instructions{
+  color: #8e969c;
+  font-size: smaller;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+}
+.primary{
+display: block;
+width: 100%;
+text-align: center;
+padding: 4px;
+
+}
+.instructions p{
+  margin: 0;
+}
+.qr-button{
+  width: 90%;
+  max-height: 200px;
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+.input-text-custom{
+  background: #FFFFFF;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.26);
+  border-radius: 3px;
+  font-size: 16px;
+  border: 0;
+  height: 45px;
+  width: 90%;
+  border: 1px solid #d8d8d8;
+  padding-left:5px;
+  display:block;
+  margin:auto;
+}
+.bottom{
+  margin-bottom:10px;
+}
+
+.bottom-20{
+  margin-bottom:20px;
+}
+
+.giris-button{
+  background-image: linear-gradient(180deg, #536dbf 32%, #4851b7 92%)!important;
+  background-color:#4851b7!important;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.26);
+  height:40px;
+  width:calc(90% + 0px);
+  display:block;
+  margin:auto;
+  color: white!important;
+  outline: none;
+  border:none;
+}
+
+.guest {
+  padding-left:45px!important;
+  background: #fff url(../../assets/imgs/guest-64.png) no-repeat left center;
+  background-position-x: 5px!important;
+  display: block;
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+}
+
+.posta {
+  padding-left:45px!important;
+  background: #fff url(../../assets/imgs/email-64.png) no-repeat left center;
+  background-position-x: 5px!important;
+  display: block;
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+}
+
+.sifre {
+  padding-left:45px!important;
+  background: #fff url(../../assets/imgs/lock-64.png) no-repeat left center;
+  background-position-x: 5px!important;
+  display: block;
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+}

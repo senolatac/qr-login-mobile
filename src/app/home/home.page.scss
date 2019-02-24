@@ -2,3 +2,16 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.login-button{
+  background-image: linear-gradient(180deg, #536dbf 32%, #4851b7 92%)!important;
+  background-color:#4851b7!important;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.26);
+  height:40px;
+  width:calc(90% + 0px);
+  display:block;
+  margin:auto;
+  color: white!important;
+  outline: none;
+  border:none;
+}

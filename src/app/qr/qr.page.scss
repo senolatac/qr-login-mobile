@@ -1,0 +1,30 @@
+page-qr {
+
+  page-qr-scanner {
+  ion-content {
+     background: transparent!important;
+  }
+  }
+
+ .content {
+     background: none transparent;
+ }
+
+
+ .button {
+     background: none;
+ }
+
+ html , body, #my_page {
+     background: none;
+ }
+
+ .ios .ion-page.show-page ~ .nav-decor{
+   background: none transparent!important;
+ }
+
+}
+
+.nav-decor{
+  background: transparent!important;
+}

@@ -1,0 +1,25 @@
+<ion-content padding>
+      <img src="assets/imgs/logo.png" class="logo"/>
+      <div class="instructions"><p>Please sign in or sign up to join system.</p></div>
+      <div class="bosluk"></div>
+      <form (ngSubmit)="signupForm()" [formGroup]="signupFormGroup" name="myForm" *ngIf="isLogin">
+        <ion-label class="input-label-custom">Full Name</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.name" name="name" placeholder="Name" class="guest input-text-custom bottom" formControlName="name" [class.invalid]="!signupFormGroup.controls.name.valid && (signupFormGroup.controls.name.dirty || submitAttempt)"></ion-input>
+        <ion-label class="input-label-custom">Username</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.ssoId" name="ssoId" placeholder="Username" class="guest input-text-custom bottom" formControlName="ssoId" [class.invalid]="!signupFormGroup.controls.ssoId.valid && (signupFormGroup.controls.ssoId.dirty || submitAttempt)"></ion-input>
+        <ion-label class="input-label-custom">Email Address</ion-label>
+        <ion-input type="email" [(ngModel)]="userData.email" name="email" placeholder="Email" class="posta input-text-custom bottom" formControlName="email" [class.invalid]="!signupFormGroup.controls.email.valid && (signupFormGroup.controls.email.dirty || submitAttempt)"></ion-input>
+        <ion-label class="input-label-custom">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="userData.password" name="password" placeholder="Password" class="sifre input-text-custom bottom-20" formControlName="password" [class.invalid]="!signupFormGroup.controls.password.valid && (signupFormGroup.controls.password.dirty || submitAttempt)"></ion-input>
+        <button ion-button type="submit" block class="giris-button" [disabled]="!signupFormGroup.dirty || !signupFormGroup.valid">Sign Up</button>
+      </form>
+      <form (ngSubmit)="loginForm()" [formGroup]="loginFormGroup" name="myForm" *ngIf="!isLogin">
+        <ion-label class="input-label-custom">Username or email</ion-label>
+        <ion-input type="text" [(ngModel)]="userData.ssoId" name="ssoId" placeholder="Username or email" class="guest input-text-custom bottom" formControlName="ssoId" [class.invalid]="!loginFormGroup.controls.ssoId.valid && (loginFormGroup.controls.ssoId.dirty || submitAttempt)"></ion-input>
+        <ion-label class="input-label-custom">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="userData.password" name="password" placeholder="Password" class="sifre input-text-custom bottom-20" formControlName="password" [class.invalid]="!loginFormGroup.controls.password.valid && (loginFormGroup.controls.password.dirty || submitAttempt)"></ion-input>
+        <button ion-button type="submit" block class="giris-button" [disabled]="!loginFormGroup.dirty || !loginFormGroup.valid">Sign In</button>
+      </form>
+      <ion-button fill="clear" expand="block" color="primary" (click)="changeLogin()">{{ !isLogin ? ("I don't have account."):("I have account.") }}</ion-button>
+      <div class="instructions"><p>All rights are reserved by Senol Atac.</p></div>
+</ion-content>

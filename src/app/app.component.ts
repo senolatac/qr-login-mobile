@@ -16,9 +16,14 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'QR Login',
+      url: '/qr',
+      icon: 'qr-scanner'
+    },
+    {
+      title: 'Result',
+      url: '/result',
+      icon: 'alert'
     }
   ];
 
